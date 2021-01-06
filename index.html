@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FOODEE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body class="body">
+		<div class="container">
+			<div class="row">
+				<div class="left">
+					<a href="index.html"><img  src="img/logo.png"></a>
+
+				</div>
+				
+				<div class="right" id="nav">
+					<ul>
+                        
+						<li><a href="#menu">Menu</a> </li>
+						<li><a href="#reservation">Reservation</a> </li>
+						<li><a href="contact.html">Contact</a> </li>
+						<li><a href="ourstory.html">Our Story</a> </li>
+						<li><a href="login.html">Login</a> </li>
+
+					</ul>
+				</div>
+							
+			</div>
+			<div class="banner">
+				<h1>FOODEE</h1>
+				<h2><i>Best Food In Town</i></h2>
+			</div>
+		</div>
+    <from class ="search-form">
+<input type = "text" placeholder="Search">
+    <button>Search</button>
+       </from>
+
+		<div id="menu">
+			<div class="menu_banner">
+				<img src="img/menu.png">
+				<hr>
+			</div>
+			<div class="food_manu">
+				<div class="menu_left">
+					<table>
+						<tr>
+							<td>Steam Rice</td>
+							<td>25 Taka</td>
+						</tr>
+						<tr>
+							<td>Rui Fish</td>
+							<td>50 Taka</td>
+						</tr>
+						<tr>
+							<td>Beef</td>
+							<td>95 Taka</td>
+						</tr>
+						<tr>
+							<td>Mutton</td>
+							<td>110 Taka</td>
+						</tr>
+					</table>
+					<hr>
+				</div>
+				<div class="menu_right">
+									<table>
+						<tr>
+							<td>Soft Drinks</td>
+							<td>15 Taka</td>
+						</tr>
+						<tr>
+							<td>Curd</td>
+							<td>200 Taka</td>
+						</tr>
+						<tr>
+							<td>Sweet</td>
+							<td>100 Taka</td>
+						</tr>
+						<tr>
+							<td>Tea</td>
+							<td>20 Taka</td>
+						</tr>
+					</table>
+					<hr>
+				</div>
+			</div>
+				
+		</div>
+
+		<div class="dises">
+			<h2>FEATURED DISHES </h2>
+			<div class="dish_img">
+				<div class="dish1">
+					<img src="img/goru.jpg">
+					<p>Special Beef Masala</p>
+				</div>
+				<div class="dish1">
+					<img src="img/vat.jpg">
+					<p>Steam Rice</p>
+				</div>
+				<div class="dish1">
+					<img src="img/khasi.jpg">
+					<p>Special Mutton Curry</p>
+				</div>
+				<div class="dish1">
+					<img src="img/rui.jpg">
+					<p>Rui Fish Vhuna</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="form" id="reservation">
+			<h3><i>Reservation</i></h3>
+			<input type="text" name="name" placeholder="Name" class="input">
+			<br>
+			<input type="email" name="name" placeholder="Mail" class="input">
+			<br>
+			<select class="select">
+					<option>Select an Occation</option>
+					<option>Wedding Ceremony</option>
+					<option>Birthday</option>
+					<option>Others</option>
+			</select>
+			<br>
+			<input type="date" name="name" placeholder="Date"  class="input" >
+			<br>
+			<textarea    placeholder="Message" class="input"></textarea>
+			<br>
+			<input  value="Send Message" type="submit" class="btn">
+            <button onclick="myFunction()">Print this page</button>
+
+  <script>
+ function myFunction() {
+  window.print();
+ }
+</script>
+		</div>
+    <div class="Footer">&copy;FOODEE</div>
+		
+
+		<script>
+			$('#nav a').click(function(){
+				var hash = this.hash;
+				var position = $(hash).offset().top;
+				$('html').animate({
+					scrollTop:position
+				},1000);
+			})
+		</script>
+	
+		
+
+</body>
+</html>
